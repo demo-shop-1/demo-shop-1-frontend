@@ -6,10 +6,11 @@ on:
       - main
   pull_request:
     branches:
-      - main:
+      - main
   workflow_dispatch:
 
 jobs:
+  # nombre de la tarea
   hello:
     runs-on: ubuntu-latest
     steps:
