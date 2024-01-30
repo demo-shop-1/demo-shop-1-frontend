@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
+    "test:dev": "ng test",
     "serve:ssr:demo-shop-1": "node dist/demo-shop-1/server/server.mjs",
     "lint": "ng lint"
   },
