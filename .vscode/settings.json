@@ -1,0 +1,20 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  // https://dev.to/kinginit/enforcing-front-end-guidelines-in-an-angular-project-4199
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "on",
+  "editor.trimAutoWhitespace": true,
+  "editor.tabSize": 2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.words": [
+    "devkit",
+    "Parens",
+    "stylelint"
+  ],
+}
