@@ -3,6 +3,9 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
+  "plugins": [
+    "unused-imports"
+  ],
   "overrides": [
     {
       "files": [
@@ -29,6 +32,42 @@
             "type": "element",
             "prefix": "app",
             "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/prefer-on-push-component-change-detection": "error",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+          "warn",
+          {
+            "vars": "all",
+            "varsIgnorePattern": "^_",
+            "args": "after-used",
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "brace-style": [
+          "error",
+          "1tbs"
+        ],
+        "eqeqeq": "error",
+        "no-else-return": "error",
+        "no-trailing-spaces": "error",
+        "no-var": "error",
+        "object-shorthand": [
+          "error",
+          "properties"
+        ],
+        "prefer-const": "error",
+        "prefer-object-spread": "error",
+        "prefer-template": "error",
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
           }
         ]
       }
