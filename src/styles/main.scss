@@ -1,0 +1,13 @@
+@import 'theme';
+@import 'colors';
+@import 'fonts';
+
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  // font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background-color: #fff;
+}
