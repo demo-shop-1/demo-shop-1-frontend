@@ -28,7 +28,7 @@ $primary-palette: (
     900: $light-primary-text,
   ),
 );
-$my-primary: mat.define-palette($primary-palette, 900);
+$primary-palette: mat.define-palette($primary-palette, 900);
 
 // accent
 $accent-palette: (
@@ -55,19 +55,30 @@ $accent-palette: (
     900: $light-accent-text,
   ),
 );
-$my-accent: mat.define-palette($accent-palette, 500);
+$accent-palette: mat.define-palette($accent-palette, 500);
 
-$my-theme: mat.define-light-theme(
+// TYPOGRAPHY
+$general-typography: mat.define-typography-config($base-font-family);
+
+$light-theme: mat.define-light-theme(
   (
     color: (
-      primary: $my-primary,
-      accent: $my-accent,
+      primary: $primary-palette,
+      accent: $accent-palette,
     ),
-    typography: mat.define-typography-config($base-font-family),
-    density: 0,
+    typography: $general-typography,
+    density: -1,
   )
 );
-@include mat.core-theme($my-theme);
-@include mat.toolbar-theme($my-theme);
-@include mat.icon-theme($my-theme);
-@include mat.button-theme($my-theme);
+
+// GET ALL
+// @include mat.all-component-themes($light-theme);
+// GET EACH ONE
+@include mat.core-theme($light-theme);
+@include mat.toolbar-theme($light-theme);
+@include mat.icon-button-theme($light-theme);
+@include mat.icon-theme($light-theme);
+@include mat.button-theme($light-theme);
+@include mat.button-toggle-theme($light-theme);
+@include mat.fab-theme($light-theme);
+@include mat.divider-theme($light-theme);

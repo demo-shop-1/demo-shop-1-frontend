@@ -1,12 +1,9 @@
 @import 'theme';
-@import 'colors';
-@import 'fonts';
 
 html,
 body {
-  height: 100%;
-  margin: 0 auto;
-  // font-family: $base-font-family;
+  height: 100vh;
+  margin: 0;
   font-size: $base-font-size;
   line-height: $base-line-height;
   background-color: #fff;
