@@ -72,13 +72,13 @@ $light-theme: mat.define-light-theme(
 );
 
 // GET ALL
-// @include mat.all-component-themes($light-theme);
+@include mat.all-component-themes($light-theme);
 // GET EACH ONE
-@include mat.core-theme($light-theme);
-@include mat.toolbar-theme($light-theme);
-@include mat.icon-button-theme($light-theme);
-@include mat.icon-theme($light-theme);
-@include mat.button-theme($light-theme);
-@include mat.button-toggle-theme($light-theme);
-@include mat.fab-theme($light-theme);
-@include mat.divider-theme($light-theme);
+// @include mat.core-theme($light-theme);
+// @include mat.toolbar-theme($light-theme);
+// @include mat.icon-button-theme($light-theme);
+// @include mat.icon-theme($light-theme);
+// @include mat.button-theme($light-theme);
+// @include mat.button-toggle-theme($light-theme);
+// @include mat.fab-theme($light-theme);
+// @include mat.divider-theme($light-theme);
