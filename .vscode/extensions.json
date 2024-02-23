@@ -15,6 +15,7 @@
     "esbenp.prettier-vscode",
     "dannyconnell.split-html-attributes",
     "pmneo.tsimporter",
-    "ghaschel.vscode-angular-html"
+    "ghaschel.vscode-angular-html",
+    "bradlc.vscode-tailwindcss"
   ]
 }

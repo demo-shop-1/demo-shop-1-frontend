@@ -1,9 +1,11 @@
-<mat-toolbar color="primary" class="header">
+<mat-toolbar
+  color="primary"
+  class="header max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <!-- LOGO -->
   <img src="assets/img/logo.png" alt="logo" class="header__logo" />
 
   <!-- SEND TO -->
-  <button mat-button>
+  <button mat-button class="md:visible">
     <mat-icon>share_location</mat-icon>
     Send to Spain
   </button>
@@ -27,6 +29,7 @@
       <mat-icon>search</mat-icon>
     </button>
   </form>
+
   <!-- LANGUAGE -->
   <mat-form-field>
     <mat-select value="1">

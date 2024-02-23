@@ -10,6 +10,7 @@
     "test:dev": "ng test",
     "lint": "ng lint && npx stylelint \"**/*.scss\""
   },
+  "author": "Willy Arrojas <willyarrojas@gmail.com",
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.1",
@@ -38,6 +39,7 @@
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "jasmine-core": "~5.1.0",
@@ -46,8 +48,10 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss": "^8.4.35",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "~5.3.2"
   }
 }
